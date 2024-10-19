@@ -16,3 +16,7 @@ npm install -g create-react-app
 npx create-react-app app_name
 cd app_name
 npm start
+
+#git config error
+git config --global user.name "name"
+git config --global user.email "github email"
