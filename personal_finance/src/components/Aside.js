@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart } from 'lucide-react';
-
+import {  CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart } from 'lucide-react';
+import profile from '../images/profile.png'
 export default function Aside() {
     return (
     <aside className="w-64 bg-white p-6 flex flex-col">
         <div className="flex items-center mb-8">
-          <img src="/placeholder.svg?height=48&width=48" alt="Profile" className="w-12 h-12 rounded-full mr-4" />
+          <img src={profile} alt="Profile" className="w-12 h-12 rounded-full mr-4" />
           <div>
-            <h2 className="font-semibold">Gadiel Machado</h2>
+            <h2 className="font-semibold">Henry Davidson</h2>
             <p className="text-sm text-gray-500">Designer</p>
           </div>
         </div>
