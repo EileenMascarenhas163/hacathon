@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import profile from '../images/profile.png'; 
-import {
-  Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart,
-} from 'lucide-react';
+import React, { useState} from 'react'
+import { Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart } from 'lucide-react';
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,7 +32,7 @@ export default function Dashboard() {
           </a>
           <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
             <PieChart className="mr-3 h-5 w-5" />
-            Budget Management
+            Revenue analytics
           </a>
           <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
             <Search className="mr-3 h-5 w-5" />
