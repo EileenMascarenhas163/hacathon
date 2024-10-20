@@ -173,8 +173,8 @@ export default function FinancialDashboard() {
               <Label>{goal.name}</Label>
               <Progress value={(goal.current / goal.target) * 100} className="mb-2" />
               <div className="flex justify-between text-sm text-muted-foreground">
-                <span>${goal.current}</span>
-                <span>${goal.target}</span>
+                <span>&#8377;{goal.current}</span>
+                <span>&#8377;{goal.target}</span>
               </div>
               <Input
                 type="number"
@@ -207,7 +207,7 @@ export default function FinancialDashboard() {
               {bills.map((bill) => (
                 <div key={bill.name} className="flex justify-between items-center mb-2">
                   <span>{bill.name}</span>
-                  <span>${bill.amount}</span>
+                  <span>&#8377;{bill.amount}</span>
                   <span>{new Date(bill.dueDate).toLocaleDateString()}</span>
                 </div>
               ))}
