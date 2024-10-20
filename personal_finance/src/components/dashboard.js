@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-import { Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart } from 'lucide-react';
+import { Bell, CreditCard, Search,  ShoppingCart } from 'lucide-react';
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -44,9 +44,9 @@ export default function Dashboard() {
           <div className="col-span-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white">
             <div className="flex justify-between mb-4">
               <p className="text-lg">4328 4388 4161 8183</p>
-              <img src="/placeholder.svg?height=30&width=50" alt="Mastercard" className="h-8" />
+              <img src="" alt="Mastercard" className="h-8" />
             </div>
-            <p className="mb-4">Marcel Dias</p>
+            <p className="mb-4">Henry davidson</p>
             <p>12/24</p>
           </div>
 
@@ -63,7 +63,7 @@ export default function Dashboard() {
           {/* Transactions */}
           <div className="bg-white rounded-xl p-6 shadow-sm">
             <h2 className="text-lg font-semibold mb-4">Transactions</h2>
-            {[...Array(9)].map((_, i) => (
+            {[...Array(4)].map((_, i) => (
               <div key={i} className="flex justify-between items-center py-2 border-b last:border-b-0">
                 <div className="flex items-center">
                   <ShoppingCart className="h-5 w-5 mr-3 text-gray-400" />
