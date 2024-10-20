@@ -78,7 +78,7 @@ export default function FinancialDashboard() {
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 to-blue-600">
       <h1 className="text-3xl font-bold mb-8">Financial Dashboard</h1>
       
       {/* Financial Wellness Score */}
@@ -87,8 +87,8 @@ export default function FinancialDashboard() {
           <CardTitle>Financial Wellness Score</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex items-center justify-between">
-            <Progress value={financialWellnessScore} className="w-3/4" />
+          <div className="flex items-center justify-between to-blue-600">
+            <Progress value={financialWellnessScore} className="w-3/4 to-blue-600" />
             <span className="text-2xl font-bold">{financialWellnessScore}</span>
           </div>
         </CardContent>
@@ -102,7 +102,7 @@ export default function FinancialDashboard() {
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
-              <Pie dataKey="value" data={expenses} fill="var(--color-expenses)" label />
+              <Pie dataKey="value" data={expenses} fill="blue-600" label />
               <Tooltip />
             </PieChart>
           </ResponsiveContainer>
@@ -122,8 +122,8 @@ export default function FinancialDashboard() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="budget" fill="var(--color-budget)" />
-              <Bar dataKey="spent" fill="var(--color-spent)" />
+              <Bar dataKey="budget" fill="blue-600" />
+              <Bar dataKey="spent" fill="blue-600" />
             </BarChart>
           </ResponsiveContainer>
           {budgets.map((item) => (
@@ -156,15 +156,15 @@ export default function FinancialDashboard() {
             <div key={goal.name} className="mb-4">
               <Label>{goal.name}</Label>
               <Progress value={(goal.current / goal.target) * 100} className="mb-2" />
-              <div className="flex justify-between text-sm text-muted-foreground">
-                <span>${goal.current}</span>
-                <span>${goal.target}</span>
+              <div className="flex justify-between text-sm text-muted-foreground to-blue-600">
+                <span>₹{goal.current}</span>
+                <span>₹{goal.target}</span>
               </div>
               <Input
                 type="number"
                 value={goal.current}
                 onChange={(e) => handleSavingsGoalChange(goal.name, Number(e.target.value))}
-                className="mt-2"
+                className="mt-2"a
               />
             </div>
           ))}
@@ -191,7 +191,7 @@ export default function FinancialDashboard() {
               {bills.map((bill) => (
                 <div key={bill.name} className="flex justify-between items-center mb-2">
                   <span>{bill.name}</span>
-                  <span>${bill.amount}</span>
+                  <span>₹{bill.amount}</span>
                   <span>{new Date(bill.dueDate).toLocaleDateString()}</span>
                 </div>
               ))}

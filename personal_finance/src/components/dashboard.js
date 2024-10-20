@@ -7,53 +7,7 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside
-        className={`fixed inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} w-64 bg-white p-6 flex flex-col transition-transform duration-300 ease-in-out z-50 lg:relative lg:translate-x-0 lg:w-64`}
-      >
-        <div className="flex items-center mb-12">
-          <img src={profile} alt="Profile" className="w-12 h-12 rounded-full mr-4" />
-          <div>
-            <h2 className="font-semibold">Henry Davidson</h2>
-            <p className="text-md text-gray-500">Financial Analyst</p>
-          </div>
-        </div>
-        <nav className="flex-1">
-          <a href="#" className="flex items-center py-2 px-4 bg-blue-50 text-blue-700 rounded-lg mb-2">
-            <PieChart className="mr-3 h-5 w-5" />
-            Dashboard
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <CreditCard className="mr-3 h-5 w-5" />
-            Wallet
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <ShoppingCart className="mr-3 h-5 w-5" />
-            Transactions
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <PieChart className="mr-3 h-5 w-5" />
-            Revenue analytics
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <Search className="mr-3 h-5 w-5" />
-            Search
-          </a>
-        </nav>
-        <div className="mt-auto">
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <Settings className="mr-3 h-5 w-5" />
-            Setting
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <HelpCircle className="mr-3 h-5 w-5" />
-            Help
-          </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg">
-            <LogOut className="mr-3 h-5 w-5" />
-            Log Out
-          </a>
-        </div>
-      </aside>
+      
 
       {/* Overlay for mobile */}
       {isSidebarOpen && (
@@ -184,7 +138,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-            {/* Right Column */}
+            {/* Right Column
             <div className="w-full lg:w-1/4 lg:ml-8 mt-8 lg:mt-0">
               <div className="bg-white rounded-xl p-6 shadow-sm mb-8">
                 <h2 className="text-lg font-semibold mb-4">Payable Accounts</h2>
@@ -241,7 +195,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         </main>
       </div>
     </div>

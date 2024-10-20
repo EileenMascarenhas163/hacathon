@@ -21,18 +21,12 @@ export default function Aside() {
             <CreditCard className="mr-3 h-5 w-5" />
             Wallet
           </a>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <ShoppingCart className="mr-3 h-5 w-5" />
-            Transactions
-          </a>
+          
           <Link to="/budget" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
             <PieChart className="mr-3 h-5 w-5" />
             Budgets
           </Link>
-          <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
-            <Search className="mr-3 h-5 w-5" />
-            Search
-          </a>
+         
         </nav>
         <div className="mt-auto">
           <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
