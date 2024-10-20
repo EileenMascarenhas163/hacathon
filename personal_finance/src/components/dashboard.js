@@ -157,6 +157,65 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
+        {/* Right Column */}
+        <div className="w-1/4 ml-8">
+          <div className="bg-white rounded-xl p-6 shadow-sm mb-8">
+            <h2 className="text-lg font-semibold mb-4">Payable Accounts</h2>
+            <p className="text-sm text-gray-500 mb-4">Keep your accounts up to date to avoid issues.</p>
+            <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+              <div className="bg-blue-600 h-2.5 rounded-full w-11/12"></div>
+            </div>
+            <p className="text-right text-sm font-semibold">14 OUT OF 16</p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-sm mb-8">
+            <h2 className="text-lg font-semibold mb-4">Receipts</h2>
+            <div className="space-y-4">
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="font-semibold">$ 5,000.00</p>
+                  <p className="text-sm text-gray-500">Salary</p>
+                </div>
+                <span className="text-green-500">↗</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="font-semibold">$ 593.00</p>
+                  <p className="text-sm text-gray-500">Service</p>
+                </div>
+                <span className="text-green-500">↗</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="font-semibold">$ 3,030.98</p>
+                  <p className="text-sm text-gray-500">Rent or Mortgage</p>
+                </div>
+                <span className="text-green-500">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-sm">
+            <h2 className="text-lg font-semibold mb-4">Payables</h2>
+            <div className="space-y-4">
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="font-semibold">$ 202.98</p>
+                  <p className="text-sm text-gray-500">Electricity Bill</p>
+                </div>
+                <CreditCard className="h-5 w-5 text-gray-400" />
+              </div>
+              <div className="flex justify-between items-center">
+                <div>
+                  <p className="font-semibold">$ 3,030.98</p>
+                  <p className="text-sm text-gray-500">Rent or Mortgage</p>
+                </div>
+                <CreditCard className="h-5 w-5 text-gray-400" />
+              </div>
+            </div>
+          </div>
+        </div>
         </main>
     </div>
   )
