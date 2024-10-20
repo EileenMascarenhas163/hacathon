@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import profile from '../images/profile.png'; 
 import {
   Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart,
 } from 'lucide-react';
@@ -12,11 +13,11 @@ export default function Dashboard() {
       <aside
         className={`fixed inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} w-64 bg-white p-6 flex flex-col transition-transform duration-300 ease-in-out z-50 lg:relative lg:translate-x-0 lg:w-64`}
       >
-        <div className="flex items-center mb-8">
-          <img src="/placeholder.svg?height=48&width=48" alt="Profile" className="w-12 h-12 rounded-full mr-4" />
+        <div className="flex items-center mb-12">
+          <img src={profile} alt="Profile" className="w-12 h-12 rounded-full mr-4" />
           <div>
-            <h2 className="font-semibold">Gadiel Machado</h2>
-            <p className="text-sm text-gray-500">Designer</p>
+            <h2 className="font-semibold">Henry Davidson</h2>
+            <p className="text-md text-gray-500">Financial Analyst</p>
           </div>
         </div>
         <nav className="flex-1">
