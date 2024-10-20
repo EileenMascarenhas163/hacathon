@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import profile from '../images/profile.png'; 
-import {
-  Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart,
-} from 'lucide-react';
+import React from 'react';
+import { Bell, CreditCard, HelpCircle, LogOut, PieChart, Search, Settings, ShoppingCart } from 'lucide-react';
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -10,14 +7,12 @@ export default function Dashboard() {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside
-        className={`fixed inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} w-64 bg-white p-6 flex flex-col transition-transform duration-300 ease-in-out z-50 lg:relative lg:translate-x-0 lg:w-64`}
-      >
-        <div className="flex items-center mb-12">
-          <img src={profile} alt="Profile" className="w-12 h-12 rounded-full mr-4" />
+      <aside className="w-64 bg-white p-6 flex flex-col">
+        <div className="flex items-center mb-8">
+          <img src="/placeholder.svg?height=48&width=48" alt="Profile" className="w-12 h-12 rounded-full mr-4" />
           <div>
-            <h2 className="font-semibold">Henry Davidson</h2>
-            <p className="text-md text-gray-500">Financial Analyst</p>
+            <h2 className="font-semibold">Gadiel Machado</h2>
+            <p className="text-sm text-gray-500">Designer</p>
           </div>
         </div>
         <nav className="flex-1">
@@ -57,14 +52,6 @@ export default function Dashboard() {
           </a>
         </div>
       </aside>
-
-      {/* Overlay for mobile */}
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black opacity-50 lg:hidden z-40"
-          onClick={() => setIsSidebarOpen(false)}
-        ></div>
-      )}
 
       {/* Main Content */}
       <div className="flex flex-col flex-1 lg:sm-64">

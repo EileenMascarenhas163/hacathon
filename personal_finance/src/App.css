@@ -1,0 +1,28 @@
+  .flex {
+    display: flex;
+/* Make sure the layout takes full height */
+  }
+
+.budget-manager {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .budget-input, .spending-input {
+    margin: 20px 0;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #ddd;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
