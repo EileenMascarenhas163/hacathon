@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Transactions from "./ui/transaction"; // Adjust the path if needed
 import { useState } from "react";
+import EarningsChart from "./ui/monthly_earnings";
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -77,21 +78,11 @@ export default function Dashboard() {
           {/* Transactions Section - Replace with the Transactions component */}
           <Transactions />
 
-          {/* Monthly earnings */}
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h2 className="text-lg font-semibold mb-4">Monthly earnings</h2>
-            <div className="h-48 flex items-end">
-              {/* This is a placeholder for the chart. In a real application, you'd use a charting library. */}
-              <div className="flex-1 bg-blue-500 h-3/4 rounded-t-lg"></div>
-              <div className="flex-1 bg-blue-500 h-1/2 rounded-t-lg mx-1"></div>
-              <div className="flex-1 bg-blue-500 h-2/3 rounded-t-lg"></div>
-              <div className="flex-1 bg-blue-500 h-1/3 rounded-t-lg mx-1"></div>
-              <div className="flex-1 bg-blue-500 h-5/6 rounded-t-lg"></div>
-              <div className="flex-1 bg-blue-500 h-2/3 rounded-t-lg mx-1"></div>
-              <div className="flex-1 bg-blue-500 h-1/2 rounded-t-lg"></div>
-            </div>
-            <div>&nbsp; Jan &nbsp;&nbsp; Feb&nbsp;&nbsp; Mar&nbsp;&nbsp; Apr&nbsp;&nbsp; May&nbsp;&nbsp; Jun &nbsp;&nbsp; Jul</div>
-          </div>
+          <EarningsChart></EarningsChart>
+
+          
+
+          
 
           {/* Earnings */}
           <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col items-center">
