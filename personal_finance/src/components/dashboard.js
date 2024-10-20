@@ -1,5 +1,15 @@
-import React, { useState} from 'react'
-import { Bell, CreditCard, Search,  ShoppingCart } from 'lucide-react';
+import {
+  Bell,
+  CreditCard,
+  HelpCircle,
+  LogOut,
+  PieChart,
+  Search,
+  Settings,
+  ShoppingCart,
+} from "lucide-react";
+import Transactions from "./ui/transaction"; // Adjust the path if needed
+import { useState } from "react";
 
 export default function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -44,7 +54,11 @@ export default function Dashboard() {
           <div className="col-span-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white">
             <div className="flex justify-between mb-4">
               <p className="text-lg">4328 4388 4161 8183</p>
-              <img src="" alt="Mastercard" className="h-8" />
+              <img
+                src="/placeholder.svg?height=30&width=50"
+                alt="Mastercard"
+                className="h-8"
+              />
             </div>
             <p className="mb-4">Henry davidson</p>
             <p>12/24</p>
@@ -60,22 +74,8 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Transactions */}
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h2 className="text-lg font-semibold mb-4">Transactions</h2>
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="flex justify-between items-center py-2 border-b last:border-b-0">
-                <div className="flex items-center">
-                  <ShoppingCart className="h-5 w-5 mr-3 text-gray-400" />
-                  <span>Shopping</span>
-                </div>
-                <div className="text-right">
-                  <p>Nov 25</p>
-                  <p className="text-gray-500">&#8377; 300</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Transactions Section - Replace with the Transactions component */}
+          <Transactions />
 
           {/* Monthly earnings */}
           <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -127,67 +127,8 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-
-            {/* Right Column */}
-            <div className="w-full lg:w-1/4 lg:ml-8 mt-8 lg:mt-0">
-              <div className="bg-white rounded-xl p-6 shadow-sm mb-8">
-                <h2 className="text-lg font-semibold mb-4">Payable Accounts</h2>
-                <p className="text-sm text-gray-500 mb-4">Keep your accounts up to date to avoid issues.</p>
-                <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4">
-                  <div className="bg-blue-600 h-2.5 rounded-full w-11/12"></div>
-                </div>
-                <p className="text-right text-sm font-semibold">14 OUT OF 16</p>
-              </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-sm mb-8">
-            <h2 className="text-lg font-semibold mb-4">Receipts</h2>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">&#8377; 5,000.00</p>
-                  <p className="text-sm text-gray-500">Salary</p>
-                </div>
-                <span className="text-green-500">↗</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">&#8377; 593.00</p>
-                  <p className="text-sm text-gray-500">Service</p>
-                </div>
-                <span className="text-green-500">↗</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">&#8377; 3,030.98</p>
-                  <p className="text-sm text-gray-500">Rent or Mortgage</p>
-                </div>
-                <span className="text-green-500">↗</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-sm">
-            <h2 className="text-lg font-semibold mb-4">Payables</h2>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">&#8377; 202.98</p>
-                  <p className="text-sm text-gray-500">Electricity Bill</p>
-                </div>
-                <CreditCard className="h-5 w-5 text-gray-400" />
-              </div>
-              <div className="flex justify-between items-center">
-                <div>
-                  <p className="font-semibold">&#8377; 3,030.98</p>
-                  <p className="text-sm text-gray-500">Rent or Mortgage</p>
-                </div>
-                <CreditCard className="h-5 w-5 text-gray-400" />
-              </div>
-            </div>
-          </div>
-        </div>
-        </main>
-      </div>
+      </main>
+    </div>
     </div>
   );
 }
