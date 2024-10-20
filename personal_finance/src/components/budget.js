@@ -39,7 +39,7 @@ const initialBills = [
 ]
 
 export default function FinancialDashboard() {
-   
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [expenses, setExpenses] = useState(expenseData)
   const [budgets, setBudgets] = useState(budgetData)
   const [savingsGoals, setSavingsGoals] = useState(initialSavingsGoals)
@@ -78,6 +78,22 @@ export default function FinancialDashboard() {
   }
 
   return (
+    <div className="flex h-screen bg-gray-100">
+
+    {/* Main Content */}
+    <div className="flex flex-col flex-1 lg:sm-64">
+      <header className="flex justify-between items-center p-6 bg-white shadow-lg lg:hidden">
+        <button
+          className="text-gray-500 focus:outline-none"
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <h1 className="text-xl font-semibold">Dashboard</h1>
+      </header>
+
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-8">Financial Dashboard</h1>
       
@@ -217,5 +233,9 @@ export default function FinancialDashboard() {
         </CardContent>
       </Card>
     </div>
+    </div>
+
+    </div>
+
   )
 }
