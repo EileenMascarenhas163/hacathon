@@ -20,3 +20,6 @@ npm start
 #git config error
 git config --global user.name "name"
 git config --global user.email "github email"
+
+
+npm i lucide-react  
