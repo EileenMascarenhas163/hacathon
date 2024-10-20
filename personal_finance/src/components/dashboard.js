@@ -112,10 +112,10 @@ export default function Dashboard() {
           {/* Wallet */}
           <div className="bg-white rounded-xl p-6 shadow-sm">
             <h2 className="text-lg font-semibold mb-4">Wallet</h2>
-            <p className="text-3xl font-bold mb-4">$ 4,523.98</p>
+            <p className="text-3xl font-bold mb-4">&#8377; 4,523.98</p>
             <div className="flex justify-between text-sm">
-              <p className="text-green-500">↑ $ 3,030.98 Income</p>
-              <p className="text-red-500">↓ $ 223.98 Expense</p>
+              <p className="text-green-500">↑ &#8377; 3,030.98 Income</p>
+              <p className="text-red-500">↓ &#8377; 223.98 Expense</p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@ export default function Dashboard() {
                 </div>
                 <div className="text-right">
                   <p>Nov 25</p>
-                  <p className="text-gray-500">R$ 300</p>
+                  <p className="text-gray-500">&#8377; 300</p>
                 </div>
               </div>
             ))}
@@ -149,6 +149,7 @@ export default function Dashboard() {
               <div className="flex-1 bg-blue-500 h-2/3 rounded-t-lg mx-1"></div>
               <div className="flex-1 bg-blue-500 h-1/2 rounded-t-lg"></div>
             </div>
+            <div>&nbsp; Jan &nbsp;&nbsp; Feb&nbsp;&nbsp; Mar&nbsp;&nbsp; Apr&nbsp;&nbsp; May&nbsp;&nbsp; Jun &nbsp;&nbsp; Jul</div>
           </div>
 
           {/* Earnings */}
@@ -175,7 +176,7 @@ export default function Dashboard() {
                 />
               </svg>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                <p className="text-3xl font-bold">$ 4,523.98</p>
+                <p className="text-3xl font-bold">&#8377; 4,523.98</p>
                 <p className="text-green-500">+2.35%</p>
               </div>
             </div>
@@ -202,21 +203,21 @@ export default function Dashboard() {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-semibold">$ 5,000.00</p>
+                  <p className="font-semibold">&#8377; 5,000.00</p>
                   <p className="text-sm text-gray-500">Salary</p>
                 </div>
                 <span className="text-green-500">↗</span>
               </div>
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-semibold">$ 593.00</p>
+                  <p className="font-semibold">&#8377; 593.00</p>
                   <p className="text-sm text-gray-500">Service</p>
                 </div>
                 <span className="text-green-500">↗</span>
               </div>
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-semibold">$ 3,030.98</p>
+                  <p className="font-semibold">&#8377; 3,030.98</p>
                   <p className="text-sm text-gray-500">Rent or Mortgage</p>
                 </div>
                 <span className="text-green-500">↗</span>
@@ -229,14 +230,14 @@ export default function Dashboard() {
             <div className="space-y-4">
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-semibold">$ 202.98</p>
+                  <p className="font-semibold">&#8377; 202.98</p>
                   <p className="text-sm text-gray-500">Electricity Bill</p>
                 </div>
                 <CreditCard className="h-5 w-5 text-gray-400" />
               </div>
               <div className="flex justify-between items-center">
                 <div>
-                  <p className="font-semibold">$ 3,030.98</p>
+                  <p className="font-semibold">&#8377; 3,030.98</p>
                   <p className="text-sm text-gray-500">Rent or Mortgage</p>
                 </div>
                 <CreditCard className="h-5 w-5 text-gray-400" />
