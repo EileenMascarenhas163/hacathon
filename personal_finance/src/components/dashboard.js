@@ -113,8 +113,33 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="flex justify-between w-full mt-4">
-              <p>Earnings</p>
-              <p>Goals</p>
+            <table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th>Savings Goal</th>
+      <th>Current Amount (₹)</th>
+      <th>Goal Amount (₹)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emergency Fund</td>
+      <td>2000</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <td>Vacation</td>
+      <td>1500</td>
+      <td>3000</td>
+    </tr>
+    <tr>
+      <td>New Car</td>
+      <td>5000</td>
+      <td>15000</td>
+    </tr>
+  </tbody>
+</table>
+
             </div>
           </div>
         </div>
