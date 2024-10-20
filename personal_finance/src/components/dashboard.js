@@ -28,7 +28,7 @@ export default function Dashboard() {
           </a>
           <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
             <PieChart className="mr-3 h-5 w-5" />
-            Revenue analytics
+            Budget Management
           </a>
           <a href="#" className="flex items-center py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-lg mb-2">
             <Search className="mr-3 h-5 w-5" />
