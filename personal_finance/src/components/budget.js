@@ -104,7 +104,7 @@ export default function FinancialDashboard() {
         </CardHeader>
         <CardContent>
           <div className="flex items-center justify-between">
-            <Progress value={financialWellnessScore} className="w-3/4" />
+            <Progress value={financialWellnessScore} className="w-3/4 bg-gradient-to-r from-blue-500 to-blue-600" />
             <span className="text-2xl font-bold">{financialWellnessScore}</span>
           </div>
         </CardContent>
@@ -118,7 +118,7 @@ export default function FinancialDashboard() {
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
-              <Pie dataKey="value" data={expenses} fill="var(--color-expenses)" label />
+              <Pie dataKey="value" data={expenses} fill="#1F51FF" label />
               <Tooltip />
             </PieChart>
           </ResponsiveContainer>
@@ -138,8 +138,8 @@ export default function FinancialDashboard() {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Bar dataKey="budget" fill="var(--color-budget)" />
-              <Bar dataKey="spent" fill="var(--color-spent)" />
+              <Bar dataKey="budget" fill="#1F51FF"/>
+              <Bar dataKey="spent" fill="#1F51FF" />
             </BarChart>
           </ResponsiveContainer>
           {budgets.map((item) => (

@@ -44,7 +44,7 @@ export default function Dashboard() {
           <div className="col-span-2 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-6 text-white">
             <div className="flex justify-between mb-4">
               <p className="text-lg">4328 4388 4161 8183</p>
-              <img src="" alt="Mastercard" className="h-8" />
+              <img src="" alt="Mastercard" className="h-8" /> 
             </div>
             <p className="mb-4">Henry davidson</p>
             <p>12/24</p>
